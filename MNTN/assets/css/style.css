@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'GilroyRegular';
+    src: url('/assets/fonts/Gilroy-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'GilroySemi';
+    src: url('/assets/fonts/Gilroy-SemiBold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'GilroyBold';
+    src: url('/assets/fonts/Gilroy-Bold.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'ChronicleDisplay';
+    src: url('/assets/fonts/Chronicle-Display-Roman.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html {
+    font-size: 10px;
+    color: #fff;
+    background-color: #0b1d25;
+    font-family: 'GilroyRegular', sans-serif;
+    scroll-behavior: smooth;
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+
+/*************************************** Header *******************************************/
+
+header {
+    background-image: url(/assets/images/background.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    height: 185rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+a:hover {
+    color: #f3c56d;
+}
+.container-header {
+    width: 100%;
+    height: 150rem;
+    background: linear-gradient(to bottom right,#0b1d25, rgba(0, 0, 0, 0) 40%);   
+}
+
+
+.bg {
+    position: absolute;
+    top: 165rem;
+    width: 100%;
+    height: 20rem;
+    background: linear-gradient(180deg, rgba(11, 29, 37, 0) 0%, #0b1d25 100%);   
+}
+
+.row-header {
+    position: relative;
+    top: 0;
+    padding: 5rem;
+    font-size: 0;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    height: 5rem;
+}
+
+.logo img {
+    position: relative;
+    top: 0.5rem;
+}
+
+.navbar {
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    height: 5rem;
+}
+
+.navbar ul {
+    display: block;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    display: block;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    height: 4rem;
+    margin: auto;
+    padding: 1rem 3rem;
+}
+
+.navbar ul li a:hover {
+color: #f3c56d;
+}
+
+.user-btn {
+    display: inline-block;
+    width: 20%;
+}
+
+.user-btn img {
+    position: relative;
+    top: 0.5rem;
+}
+
+.user-btn button {
+    display: block;
+    position: relative;
+    color: #fff;
+    font-size: 1.8rem;
+    border: none;
+    background-color: #ffffff00;
+    cursor: pointer;
+    float: right;
+}
+
+
+.smedia {
+    display: block;
+    float: left;
+    width: 20%;
+    height: auto;
+    margin-top: 27rem;
+}
+
+.smedia p {
+    writing-mode: vertical-rl;
+    font-size: 1.8rem;
+}
+.smedia img {
+    display: block;
+    position: relative;
+    top: 0.5rem;
+    right: 0.3rem;
+    margin: 2.3rem 0;
+}
+
+.cta {
+    display: inline-block;
+    width: 60%;
+    height: 30rem;
+    margin: 15rem auto;
+    font-size: 1.8rem;
+}
+
+.accent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5rem;
+}
+
+.line {
+    width: 40px;
+    height: 2px; 
+    background-color: #f3c56d;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #f3c56d;
+    letter-spacing: 0.6rem;
+    font-family: 'GilroyBold';
+}
+
+h1 {
+    font-size: 8.8rem;
+    font-family: 'ChronicleDisplay';
+    text-transform: capitalize;
+    margin-bottom: 5rem;
+}
+
+.cta button {
+    display: block;
+    background-color: #ffffff00;
+    border: none;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cta button img {
+    position: relative;
+    left: 1.5rem;
+    top: 0.5rem;
+}
+
+.slider {
+    position: fixed;
+    z-index: 1;
+    right: 5rem;
+    top: 10rem;
+    display: block;
+    float: right;
+    width: 20%;
+    margin-top: 20rem;
+    font-size: 1.8rem;
+    height: 20rem;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+.slider nav {
+    display: block;
+    list-style: none;
+    float: right;
+}
+
+.slider nav a {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    padding: 2rem 0;
+    padding-right: 2rem;
+    text-align: right;
+    border-right: 3px solid #ffffff77;
+    text-decoration: none;
+    color: #fff;
+}
+
+.slider nav a:first-child {
+    border-right: 3px solid #fff;
+}
+
+.slider nav a:hover {
+    font-size: 2.1rem;
+    color: #f3c56d;
+}
+
+
+/************************************** MAIN  ***************************************/
+
+section {
+    width: 100%;
+    height: 100rem;
+}
+
+.container {
+    min-height: 70rem;
+    width: 100%;
+}
+
+.row {
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 1.8rem;
+}
+
+.box-first {
+    position: relative;
+    bottom: 3rem;
+    font-size: 1.8rem;
+    max-width: 40%;
+    display: inline-block;
+    margin-left: 20rem;
+}
+
+.img-first {
+    display: block;
+    float: right;
+    position: relative;
+    height: 66rem;
+    bottom: 24rem;
+    width: 40%;
+    min-width: 30%;
+}
+
+.img-first img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.accent-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 6.4rem;
+    font-family: 'ChronicleDisplay';
+    margin-bottom: 2rem;
+}
+
+p+span a {
+    display: block;
+    text-decoration: none;
+    color: #f3c56d;
+    margin-top: 4rem;
+}
+
+.watermark, .one {
+    font-family: 'GilroyBold';
+    position: absolute;
+    font-size: 24rem;
+    color: rgba(255, 255, 255, 0.199);
+}
+
+.one {
+    bottom: 24.5rem;
+    right: 51.5rem;
+}
+
+p+span a img {
+    position: relative;
+    top: 0.3rem;
+    left: 1rem;
+}
+
+.img-second {
+    display: block;
+    float: left;
+}
+
+.box-second {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    max-width: 38%;
+    margin-left: 25rem;
+    margin-top: 20rem;
+}
+
+.two {
+    right: 48rem;
+    bottom: 24rem;
+}
+
+.box-third {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    font-size: 1.8rem;
+    max-width: 40%;
+    margin-left: 20rem;
+    margin-top: 20rem;
+}
+
+.img-third {
+    display: block;
+    float: right;
+    position: relative;
+}
+ 
+#page-3 {
+    margin-top: 20rem;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.three {
+    bottom: 22.8rem;
+    right: 50rem;
+}
+
+/*********************************** FOOTER ********************************/
+
+.container-footer {
+    width: 100%;
+    height: 40rem;
+}
+
+.content1 {
+    display: inline-block;
+    width: 60%;
+    height: 30rem;
+}
+
+.content2 {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    height: 30rem;
+}
+
+.content3 {
+    display: inline-block;
+    width: 19%;
+    vertical-align: top;
+    height: 30rem;
+}
+
+.slogan {
+    width: 35%;
+    margin: 3rem 0;
+}
+
+.copy {
+    display: block;
+    margin-top: 15rem;
+    padding-left: 1rem;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+h4 {
+    font-size: 2.4rem;
+    color: #f3c56d;
+    vertical-align: top;
+    margin-bottom: 4rem;
+}
+
+h4+ul {
+    list-style: none;
+}
+
+h4+ul li a {
+    display: block;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+/******************************** END  **************************************/
