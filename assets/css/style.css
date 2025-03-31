@@ -47,7 +47,7 @@ html {
 /*************************************** Header *******************************************/
 
 header {
-    background-image: url(assets/images/background.png);
+    background-image: url('assets/images/background.png');
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
