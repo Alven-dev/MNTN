@@ -6,28 +6,28 @@
 
 @font-face {
     font-family: 'GilroyRegular';
-    src: url('/assets/fonts/Gilroy-Regular.ttf') format('ttf');
+    src: url('assets/fonts/Gilroy-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'GilroySemi';
-    src: url('/assets/fonts/Gilroy-SemiBold.ttf') format('ttf');
+    src: url('assets/fonts/Gilroy-SemiBold.ttf') format('ttf');
     font-weight: 700;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'GilroyBold';
-    src: url('/assets/fonts/Gilroy-Bold.ttf') format('ttf');
+    src: url('assets/fonts/Gilroy-Bold.ttf') format('ttf');
     font-weight: 800;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'ChronicleDisplay';
-    src: url('/assets/fonts/Chronicle-Display-Roman.otf') format('otf');
+    src: url('assets/fonts/Chronicle-Display-Roman.otf') format('otf');
     font-weight: normal;
     font-style: normal;
   }
@@ -47,7 +47,7 @@ html {
 /*************************************** Header *******************************************/
 
 header {
-    background-image: url(/assets/images/background.png);
+    background-image: url(assets/images/background.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
